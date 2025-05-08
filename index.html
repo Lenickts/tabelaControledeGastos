@@ -11,7 +11,7 @@
 <body class="h-screen bg-slate-400 flex justify-center items-center">
     <main class=" bg-slate-300 border-1 border-slate-500 rounded-3xl border-solid p-4 flex flex-col h-5/10 w-4/9 gap-5">
         
-        <h1 class="text-center font-[Montserrat] font-bold text-6xl p-2 border-b border-slate-500">Controle de Gastos</h1>
+        <h1 class="text-center font-[Montserrat] font-bold text-6xl p-2 border-b border-slate-400 shadow-lg/35 shadow-cyan-300">Controle de Gastos</h1>
 
         <form class="flex gap-4 justify-center">
             <input class="bg-slate-100 w-xs border-none rounded-md text-center font-mono" id="valor" type="number" placeholder="Digite o valor do gasto" />
@@ -21,14 +21,14 @@
                 <option>Lazer</option>
                 <option>Outros</option>
             </select>
-            <button type="button" onclick="adicionarGasto()">Adicionar</button>
+            <button class="bg-cyan-300 p-1 rounded-md font-mono shadow-md shadow-black hover:bg-cyan-500 cursor-pointer" type="button" onclick="adicionarGasto()">Adicionar</button>
         </form>
 
-        <p class="pl-15" id="Alimentação">Alimentação: R$ 0,00 </p>
-        <p class="pl-15" id="Transporte">Transporte: R$ 0,00</p>
-        <p class="pl-15" id="Lazer">Lazer: R$ 0,00</p>
-        <p class="pl-15" id="Outros">Outros: R$ 0,00</p>
-        <p class="pl-15" id="Total">Total: R$ 0,00</p>
+        <p class="pl-15" id="Alimentação"><span class="font-bold">Alimentação:</span> R$ 0,00 </p>
+        <p class="pl-15" id="Transporte"><span class="font-bold">Transporte:</span> R$ 0,00</p>
+        <p class="pl-15" id="Lazer"><span class="font-bold">Lazer:</span>R$ 0,00</p>
+        <p class="pl-15" id="Outros"><span class="font-bold">Outros:</span> R$ 0,00</p>
+        <p class="pl-15" id="Total"><span class="font-bold">Total:</span>R$ 0,00</p>
     </main>
 </body>
 </html>

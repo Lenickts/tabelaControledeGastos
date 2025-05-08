@@ -23,14 +23,14 @@ const obterCategoria = (matriz, nomeCategoria) => matriz.find((item) => item[0] 
 
 
 //Atualizar valor da categoria/matriz
-const atualizarValorCategoria = (categoria, valor) => categoria[1] = somaValor(categoria[1], valor);
+    const atualizarValorCategoria = (categoria, valor) => categoria[1] = somaValor(categoria[1], valor);
 
-const atualizarInterface = () =>{
-    matrizGastos.forEach(([nome, valor])=>{
-        const elemento = obterElemento(nome);
-        elemento.textContent = `${nome}: R$ ${formataMoeda(valor)}`;
-    })
-}
+    const atualizarInterface = () =>{
+        matrizGastos.forEach(([nome, valor])=>{
+            const elemento = obterElemento(nome);
+            elemento.textContent = `${nome}: R$ ${formataMoeda(valor)}`;
+        })
+    }
 
 
 //Principal
